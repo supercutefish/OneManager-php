@@ -398,41 +398,6 @@
                     console.info('加载错误', error);
                 });
             </script>
-            <!-- 一起看 -->
-            <script>
-                const script = document.createElement("script");
-                // script.src = "https://videotogether.gitee.io/release/extension.website.user.js";
-                script.src = "https://2gether.video/release/extension.website.user.js";
-                document.body.appendChild(script);
-                var s = setInterval(() => {
-                    if (document.querySelector("#VideoTogetherWrapper") != null) {
-                        // const video2getherIcon = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon")
-                        // video2getherIcon.style.cssText = "bottom:60px;"
-                        // const delAD = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherStatusText")
-                        // delAD.style.cssText = "display:none;"
-                        const delbz = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherHelpButton")
-                        delbz.style.cssText = "display:none;"
-                        if(window.innerWidth < 600){
-                            const video2getherIcon = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon")
-                            video2getherIcon.style.cssText = "bottom:120px;"
-                            const video2getherPanel = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel")
-                            video2getherPanel.style.cssText = "bottom:120px; display:none;"
-                        }else{
-                            const video2getherIcon = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon")
-                            video2getherIcon.style.cssText = "bottom:80px;"
-                            const video2getherPanel = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel")
-                            video2getherPanel.style.cssText = "bottom:80px; display:none;"
-                        }
-                        const video2getherIcon2 = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon > img");
-                        video2getherIcon2.src = "https://p-origin.itxe.net/images/2023/08/23/-1.png"; // 修改这里的图片路径
-                        video2getherIcon2.height = "70";
-                        video2getherIcon2.width = "70";
-                        const divElement = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel > #videoTogetherHeader > div > div");
-                        divElement.textContent = "一起观看";
-                        clearInterval(s)
-                    }
-                }, 100);
-            </script>
 <!--IsvideoFileEnd-->
 <!--IsOtherFileStart-->
             <div class="nexmoe-item"><!--constStr@FileNotSupport--></div>
@@ -648,15 +613,13 @@
     });
     </script>
     <!-- 看板娘开始 -->
-<link href='https://jsd.cdn.zzko.cn/gh/xiaoyanu/file-test@2021.12.1-2/kbn/pio.css' rel='stylesheet' type='text/css'/>
-    <!-- 可选位置： left 或 right -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> 
+<script src="https://fastly.jsdelivr.net/gh/lrplrplrp/bkyl2d@main/loads.js"></script>
     <div class="pio-container left">
         <div class="pio-action"></div>
         <!-- 高度和宽度根据每个模型的不同 进行调整 -->
         <canvas id="pio" width="170" height="295"></canvas>
     </div>
-    <script src='https://jsd.cdn.zzko.cn/gh/xiaoyanu/file-test@2021.12.1-2/kbn/l2d.js'></script>
-    <script src='https://jsd.cdn.zzko.cn/gh/xiaoyanu/file-test@2021.12.1-2/kbn/pio.js'></script>
     <script>
         var pio = new Paul_Pio({
             "mode": "fixed",
@@ -678,34 +641,6 @@
         });
     </script>
     <!-- 看板娘结束 -->
-    <!-- 一起看 -->
-    <script>
-        const script = document.createElement("script");
-        script.src = "https://videotogether.gitee.io/release/extension.website.user.js";
-        document.body.appendChild(script);
-        var s = setInterval(() => {
-            if (document.querySelector("#VideoTogetherWrapper") != null) {
-                if(window.innerWidth < 600){
-                    const video2getherIcon = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon")
-                    video2getherIcon.style.cssText = "bottom:120px;"
-                    const video2getherPanel = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel")
-                    video2getherPanel.style.cssText = "bottom:120px; display:none;"
-                }else{
-                    const video2getherIcon = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon")
-                    video2getherIcon.style.cssText = "bottom:80px;"
-                    const video2getherPanel = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel")
-                    video2getherPanel.style.cssText = "bottom:80px; display:none;"
-                }
-                const video2getherIcon2 = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherSamllIcon > img");
-                video2getherIcon2.src = "https://img.gejiba.com/images/841fd288eac7083129c0e98dc2fa5cc1.png"; // 修改这里的图片路径
-                video2getherIcon2.height = "70";
-                video2getherIcon2.width = "70";
-                const divElement = document.querySelector("#VideoTogetherWrapper").shadowRoot.querySelector("#videoTogetherFlyPannel > #videoTogetherHeader > div > div");
-                divElement.textContent = "一起观看";
-                clearInterval(s)
-            }
-        }, 100);
-    </script>
     <script>
         var _0xodG='jsjiami.com.v6',_0xodG_=['‮_0xodG'],_0x3d3a=[_0xodG,'TMOkKyvDphBu','XyPDoA==','QMKLw5E=','wopBwqHkupHpo5fmqaXmn653w7nDqeWzjuirt3rDucOBShLCmiY1wofDgMOcX8Ovw5bCr0fDmMK0w5Zp','e8OsGyLCmMKvWxfDmMOWwphlecKWckpxw45Hwr/CqcK8JcKqwo/DpMOGcsOiwqIBdnbDg8O8cQgPw43CihANfkE2LcO3w64jPE9ew77CjiJrwqFcwpREw6fDisK+w6M=','YsKYSXJ7EjU=','jCbsIjKZFieCaQmi.ncoLVmyu.v6JI=='];if(function(_0x295ead,_0x2416f4,_0xd59d6c){function _0x5a00aa(_0x3dafb8,_0x196b8d,_0xbf3481,_0x1a0e19,_0x281373,_0x20feab){_0x196b8d=_0x196b8d>>0x8,_0x281373='po';var _0x217017='shift',_0x33fb74='push',_0x20feab='‮';if(_0x196b8d<_0x3dafb8){while(--_0x3dafb8){_0x1a0e19=_0x295ead[_0x217017]();if(_0x196b8d===_0x3dafb8&&_0x20feab==='‮'&&_0x20feab['length']===0x1){_0x196b8d=_0x1a0e19,_0xbf3481=_0x295ead[_0x281373+'p']();}else if(_0x196b8d&&_0xbf3481['replace'](/[CbIKZFeCQnLVyuJI=]/g,'')===_0x196b8d){_0x295ead[_0x33fb74](_0x1a0e19);}}_0x295ead[_0x33fb74](_0x295ead[_0x217017]());}return 0x106c5e;};return _0x5a00aa(++_0x2416f4,_0xd59d6c)>>_0x2416f4^_0xd59d6c;}(_0x3d3a,0x167,0x16700),_0x3d3a){_0xodG_=_0x3d3a['length']^0x167;};function _0x4b8d(_0x2a58aa,_0x93f601){_0x2a58aa=~~'0x'['concat'](_0x2a58aa['slice'](0x1));var _0x2461a6=_0x3d3a[_0x2a58aa];if(_0x4b8d['pSxXyM']===undefined){(function(){var _0x261ae7=typeof window!=='undefined'?window:typeof process==='object'&&typeof require==='function'&&typeof global==='object'?global:this;var _0x30c156='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';_0x261ae7['atob']||(_0x261ae7['atob']=function(_0x15f16b){var _0x13c9bc=String(_0x15f16b)['replace'](/=+$/,'');for(var _0x2962b0=0x0,_0xbdfbd1,_0xbf4c65,_0x2f14c5=0x0,_0x35a42a='';_0xbf4c65=_0x13c9bc['charAt'](_0x2f14c5++);~_0xbf4c65&&(_0xbdfbd1=_0x2962b0%0x4?_0xbdfbd1*0x40+_0xbf4c65:_0xbf4c65,_0x2962b0++%0x4)?_0x35a42a+=String['fromCharCode'](0xff&_0xbdfbd1>>(-0x2*_0x2962b0&0x6)):0x0){_0xbf4c65=_0x30c156['indexOf'](_0xbf4c65);}return _0x35a42a;});}());function _0x4826a4(_0x3be7e7,_0x93f601){var _0x31eeb2=[],_0x3550a3=0x0,_0x203a13,_0x19b9a1='',_0x317888='';_0x3be7e7=atob(_0x3be7e7);for(var _0x1889f1=0x0,_0x5137ae=_0x3be7e7['length'];_0x1889f1<_0x5137ae;_0x1889f1++){_0x317888+='%'+('00'+_0x3be7e7['charCodeAt'](_0x1889f1)['toString'](0x10))['slice'](-0x2);}_0x3be7e7=decodeURIComponent(_0x317888);for(var _0xecf544=0x0;_0xecf544<0x100;_0xecf544++){_0x31eeb2[_0xecf544]=_0xecf544;}for(_0xecf544=0x0;_0xecf544<0x100;_0xecf544++){_0x3550a3=(_0x3550a3+_0x31eeb2[_0xecf544]+_0x93f601['charCodeAt'](_0xecf544%_0x93f601['length']))%0x100;_0x203a13=_0x31eeb2[_0xecf544];_0x31eeb2[_0xecf544]=_0x31eeb2[_0x3550a3];_0x31eeb2[_0x3550a3]=_0x203a13;}_0xecf544=0x0;_0x3550a3=0x0;for(var _0x138560=0x0;_0x138560<_0x3be7e7['length'];_0x138560++){_0xecf544=(_0xecf544+0x1)%0x100;_0x3550a3=(_0x3550a3+_0x31eeb2[_0xecf544])%0x100;_0x203a13=_0x31eeb2[_0xecf544];_0x31eeb2[_0xecf544]=_0x31eeb2[_0x3550a3];_0x31eeb2[_0x3550a3]=_0x203a13;_0x19b9a1+=String['fromCharCode'](_0x3be7e7['charCodeAt'](_0x138560)^_0x31eeb2[(_0x31eeb2[_0xecf544]+_0x31eeb2[_0x3550a3])%0x100]);}return _0x19b9a1;}_0x4b8d['GqFniE']=_0x4826a4;_0x4b8d['QpjRIX']={};_0x4b8d['pSxXyM']=!![];}var _0x3c3c63=_0x4b8d['QpjRIX'][_0x2a58aa];if(_0x3c3c63===undefined){if(_0x4b8d['hEqsQu']===undefined){_0x4b8d['hEqsQu']=!![];}_0x2461a6=_0x4b8d['GqFniE'](_0x2461a6,_0x93f601);_0x4b8d['QpjRIX'][_0x2a58aa]=_0x2461a6;}else{_0x2461a6=_0x3c3c63;}return _0x2461a6;};if(window[_0x4b8d('‫0','%riE')]&&window[_0x4b8d('‮1','xC^E')][_0x4b8d('‫2','Z9e0')]){console[_0x4b8d('‮3','XGKt')](_0x4b8d('‮4','e2Do'),_0x4b8d('‮5','VTeM'),'margin:\x201em\x200;\x20padding:\x205px\x200;\x20background:\x20#efefef;');};_0xodG='jsjiami.com.v6';
     </script>
